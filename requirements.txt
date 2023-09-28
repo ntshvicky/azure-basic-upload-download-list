@@ -1,0 +1,4 @@
+azure-storage-blob 
+azure-identity
+tqdm
+python-dotenv==0.21.1
