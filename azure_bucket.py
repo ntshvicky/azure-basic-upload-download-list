@@ -67,7 +67,7 @@ def download_file(folder_id, file_name):
 
     return output
 
-
+# download blob from container - below both functions
 def download_blob(blob, container_client, local_directory):
     blob_name = blob.name
     blob_client = container_client.get_blob_client(blob_name)
@@ -98,7 +98,7 @@ def download_container_contents(local_directory):
         
 
 
-# list files in s3 bucket
+# list files in bucket
 def list_files():
     contents = []
     container = ContainerClient.from_connection_string(conn_str=CONNECTION_STRING, container_name=CONTAINER_NAME)
